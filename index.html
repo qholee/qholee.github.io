@@ -1,38 +1,133 @@
+
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <title>Kyu</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="icon" href="question.png" type="image/png" sizes="16x16">
-  </head>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <link rel="icon" href="question.png" type="image/png" sizes="16x16">
 
-  <body>
- 
-
+  <title>Kyu</title>
+	<style type="text/css">
+		
+	
    
-    <div id="question">
-      contact
-    </div>   
-    <a href="https://www.instagram.com/waterbuket/">me</a>
+      
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+      text-decoration: underline;
+  
+
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+} 
+
+header{
+  padding: 0; margin: 0; width: 100%;
+  font-family: times, serif;
+  font-style: italic;
+
+  font-size:20px;
+	display:flex; flex-flow:row wrap; justify-content: space-around;
+	padding:0px;
+  margin-top: 30px;
+  margin-bottom:20px;
+
+};
+
+
+
+	</style>
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+	<header>
+    <a href=mailto:"kyu.webmail@gmail.com">contact</a>
+   	<a href="https://www.instagram.com/waterbuket/">me</a>
     <a href="https://www.are.na/kyu-lee/about-1529015711">about</a>
-    <a href="https://www.are.na/kyu-lee/design-1529015769">design</a> 
-    <div id="answer">
-
-    <p>
+    <a href="https://www.are.na/kyu-lee/design-1529015769">design.</a><!--</div>-->
+   <!-- <div id="answer">
+<p>
       kyu.webmail@gmail.com
-    </p>
-   
+    </p>W
+   </div>-->
 
+</header>
 
- 
-  </div>
+<hr style="height:1px;border:none;color:#333;background-color:#333;"/>
+<hr width="75%" style="height:1px;border:none;color:#333;background-color:#333;">
+<hr width="50%" style="height:1px;border:none;color:#333;background-color:#333;">
+<hr width="25%" style="height:1px;border:none;color:#333;background-color:#333;">
 
-  <script src="script.js"></script>
+<p style=" width:100%; margin-left:215px; font-family: helvetica, san-serif; font-size: 12px;">kyu ho lee<br/>graphic designer<br/>+1 (347) 556 1131<b/r>
+  kyu.webmail@gmail.com</p>
+</body>
+		<!--<p id="text">Hi my name is Kyu Ho Lee. I am a graphic designer.</p>-->
+		
+		
+		
+<style>
 
-  </body>
+	.img-wrap {
+		display: inline-flex;
+    justify-content: center;
+  	width: auto;
+		height:auto;
+		vertical-align: top;
+    padding:50px;
+
+  margin:0 auto;
+	}
+	.img-wrap img {
+		width: auto;
+		height: auto;
+    display:inline-flex;
+    justify-content: center;
+	}
+</style>
+<script>
+$(function() {
+	$.ajax({
+	    url: 'https://api.are.na/v2/channels/feed-1529349632?length=auto',
+	    dataType: 'json',
+	    type: 'get',
+	    cache: true,
+	    success: function(data) {
+	    	console.log(data)
+			$.each(data.contents, function(i, v) {
+				var url = v.image.display.url;
+				$("body").append('<div class="img-wrap"><img src="' + url + '" /></div>');
+
+        
+			});
+	    }
+	});
+});
+</script>
+
+<p style=" width:100%;line-height: 1.3em; margin:auto; font-family: helvetica, san-serif;text-align: center; font-size: 12px;">
+	
+	
 
 </html>
