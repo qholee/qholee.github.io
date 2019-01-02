@@ -11,6 +11,7 @@
 }
 #jin {text-decoration: underline;
 	color: blue;}
+#cross{text-decoration: line-through;}
 .menu {
    padding: 0; margin: 0; width: 100%;
   font-family: arial, san-serif;
