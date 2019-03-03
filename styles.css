@@ -1,3 +1,6 @@
+.wrapper{
+  margin:2.3em;
+}
 .hide {
     display: none;
 }
@@ -6,19 +9,19 @@
 
 
   font-size:1em;
-  margin-left: 4em;
-  margin-right:4em;
+ /* margin-left: 4em;
+  margin-right:4em;*/
 }
 #jin {text-decoration: underline;
 	color: blue;}
 #cross{text-decoration: line-through;}
 .menu {
-   padding: 0; margin: 0; width: 100%;
+   margin: 0; width: 100%;
   font-family: arial, san-serif;
 
 
   font-size:1em;
-  display:flex; flex-flow:row wrap; justify-content: space-around;
+  display:flex; flex-flow:row wrap; justify-content: space-between;
   padding:0px;
   margin-top: 40px;
   margin-bottom:20px;
@@ -29,8 +32,8 @@
 
 
   font-size:1em;
-  margin-left: 4em;
-  margin-right:4em;
+  margin-left: 0em;
+  margin-right:0em;
 }
 header{
   padding: 0; margin: 0; width: 100%;
@@ -75,4 +78,10 @@ a:hover {
 }
 ul {
   list-style-type: none;
+}
+.texts{
+  margin:0 auto;
+
+  width:100%;
+  max-width: 500px;
 }
