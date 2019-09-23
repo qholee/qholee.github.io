@@ -2,7 +2,7 @@
 html {background-color: yellow;}
 #float {font-size: 2em;
 font-family: arial,san-serif;
-position: fixed;}
+position: flex;}
 #fixed {font-size: 8em;
     color: blue;
     text-decoration: none;
