@@ -1,7 +1,7 @@
 
 #float {font-size: 4em;
 font-family: arial,san-serif;
-position: fixed;}
+position: flex;}
 #fixed {font-size: 8em;
     color: blue;
     text-decoration: none;
