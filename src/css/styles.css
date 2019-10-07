@@ -1,0 +1,80 @@
+
+html,body {
+  position: relative;
+  font: 8pt/11pt 'Open Sans', sans-serif;
+   color:hsl(0,0%,30%);
+
+}
+
+
+.hide {
+    display: none;
+}
+#kyu  {color:black;}
+.menu {
+  position: fixed;
+  margin-left: -22px;
+  margin-top: 15px;
+
+}
+
+#pages{
+  display: relative;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.texts{
+display: relative;
+max-width: 250px;
+padding-top:90px}
+
+
+#tag{margin-left: auto;}
+#portfolio{
+padding-top: 100px;
+}
+
+.container{
+  padding: 30px;
+  padding-top: 80px;}
+
+
+#flexbox{
+  display: flex; flex-flow: row wrap;  
+  justify-content: space-around;
+
+}
+
+#images{
+  max-width:250px;
+
+  /*border:1px solid #ccc;*/
+}
+
+.portrait{padding:30px;}
+
+
+
+
+a:link {
+  color:hsl(0,0%,30%);
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+   color:hsl(0,0%,30%);
+}
+
+/* mouse over link */
+a:hover {
+  color:hsl(0,0%,30%);
+      text-decoration: none;
+  
+
+}
+ul {
+  list-style-type: none;
+}
+
