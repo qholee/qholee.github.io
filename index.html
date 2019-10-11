@@ -10,7 +10,7 @@
 <meta name="google-site-verification" content="SgEcKDuCjsC9jLYbean21rRFpf5WCfYNtlmvf3ATRLE" />
 <meta name="keywords" content="Kyu Ho Lee, Graphic Design, Illustration, Printmaking" />
 <meta name="description" content="KYU HO LEE IS A GRAPHIC DESIGNER AND ILLUSTRATOR BASED IN NYC" />
-<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+<link rel="stylesheet" href="src/css/swiper.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 <link rel="stylesheet" href="styles.css">
 <script src="https://unpkg.com/swiper/js/swiper.js"></script>
@@ -46,6 +46,7 @@
         <div class="swiper-slide"><img src="images/vr/vr10.png"></div>
         <div class="swiper-slide"><img src="images/vr/vr11.png"></div>
     </div>
+    <div class="swiper-pagination"></div>
 </div>  
 <p class="right">VR TYPOGRAPHY FOR KW (MASTERPIECE VR / OCULUS MEDIUM / CINEMA 4D)</p>
 
@@ -57,6 +58,7 @@
         <div class="swiper-slide"><img src="images/system/system.png"></div>
    
     </div>
+    <div class="swiper-pagination"></div>
 </div> 
 <p class="right">SYSTEM, TYPOGRAPHY BASED ON GAMING CHAIRS, ARMY RANKS, AND THE KOREAN FLAG</p>
 
@@ -74,7 +76,9 @@
         <div class="swiper-slide"><img src="images/kw/kw3.png"></div>
         <div class="swiper-slide"><img src="images/kw/kw4.png"></div>
         <div class="swiper-slide"><img src="images/kw/kw5.png"></div>
+        <div class="swiper-slide"><img src="images/kw/kw6.png"></div>
     </div>
+    <div class="swiper-pagination"></div>
 </div> 
 
 <p class="right">ILLUSTRATIONS FOR KW</p>
@@ -92,6 +96,7 @@
         <div class="swiper-slide"><img src="images/unity/unity7.png"></div>
         <div class="swiper-slide"><img src="images/unity/unity8.png"></div>
     </div>
+    <div class="swiper-pagination"></div>
 </div> 
 <p class="right">PROPAGANDA FOR SOUTH KOREA IN RESPONSE TO NORTH KOREAN PROPAGANDA</p>
 
@@ -107,6 +112,7 @@
         <div class="swiper-slide"><img src="images/hyperdecay/hyperdecay4.png"></div>
       
     </div>
+    <div class="swiper-pagination"></div>
 </div> 
 <p class="right">FORM STUDY BASED ON HETEROTOPIA IN KOREA</p>
 <div class="swiper-container">
@@ -117,6 +123,7 @@
  
       
     </div>
+    <div class="swiper-pagination"></div>
 </div> 
 <p class="right">KIMCHI ILLUSTRATION</p>
 
@@ -129,6 +136,7 @@
  
       
     </div>
+    <div class="swiper-pagination"></div>
 </div>
 
 <p class="right">ZBRUSH EXPERIMENTS</p>
@@ -146,6 +154,7 @@
  
       
     </div>
+    <div class="swiper-pagination"></div>
 </div> 
 <p class="right">COVER DESIGNS FOR PRATTFOLIO</p>
 
@@ -160,6 +169,7 @@
         <div class="swiper-slide"><img src="images/beethoven/beethoven5.png"></div>
       
     </div>
+    <div class="swiper-pagination"></div>
 </div> 
 <p class="right">BEETHOVEN, BOOK AS A CHARACTER</p>
 <div class="swiper-container">
@@ -176,6 +186,7 @@
         <div class="swiper-slide"><img src="images/aint/aint8.jpg"></div>
         <div class="swiper-slide"><img src="images/aint/aint9.jpg"></div>      
     </div>
+    <div class="swiper-pagination"></div>
 </div> 
 <p class="right">LOGO AND INTERIOR FOR A BOOK BAR</p>
 
@@ -184,7 +195,9 @@
     <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide"><img src="images/film/film1.png"></div>
+   
     </div>
+    <div class="swiper-pagination"></div>
 </div> 
 <p class="right">FILM FORUM MAILER</p>
 <div class="swiper-container">
@@ -197,6 +210,7 @@
         <div class="swiper-slide"><img src="images/mom/mom5.png"></div>
         <div class="swiper-slide"><img src="images/mom/mom6.png"></div>
     </div>
+    <div class="swiper-pagination"></div>
 </div> 
 <p class="right">LETTER FOR MY MOTHER</p>
 <br/>
@@ -211,6 +225,7 @@
         <div class="swiper-slide"><img src="images/print/print3.jpg"></div>
      
     </div>
+    <div class="swiper-pagination"></div>
 </div> 
 <p class="right">1.BULLSHIT, 2.FROGS, 3.BROOKLYN CAT LADY</p> 
 <a href="#top" id="return">Back to top</a>
@@ -223,6 +238,11 @@
     loop: false,
     speed: 400,
     spaceBetween: 100,
- })
+    lazyLoading: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+ });
   </script>
 </body>
