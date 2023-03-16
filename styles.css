@@ -48,7 +48,7 @@ img {
 /* Slideshow container */
 
 #awk{
-  max-height: 700px;}
+ max-width: 2000px;}
 /* Slideshow container */
 
 
@@ -62,7 +62,7 @@ img {
   pointer-events: none; }
 
 .slideshow-container {
-  max-width: 1500px;
+  max-width: 1000px;
   display: flex;
   margin: 0 auto;
   padding: 10px;
@@ -130,6 +130,7 @@ img {
   .menu {padding:0px;}
   .prev{ left:0px;}
   .next {right:0px;}
+  #blog{ max-width: 200px;}
 }
 
 
@@ -162,3 +163,15 @@ font: 10pt/12pt 'Open Sans', sans-serif;
   padding:;
   pointer-events: auto; 
 }
+
+#icon{ max-width:200px;}
+
+#flexbox{
+  display: flex; flex-flow: row wrap;  
+  justify-content: space-around;
+
+}
+
+#blog{max-width: 1000px;
+display: flex;
+  margin: 0 auto;}
