@@ -19,6 +19,12 @@ ul {
   padding:20px;
 }
 
+.bio{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 a {
   cursor: pointer;
 
@@ -47,7 +53,7 @@ img {
   max-height: 900px;}
 /* Slideshow container */
 
-#awk{
+#hor{
  max-width: 2000px;}
 /* Slideshow container */
 
@@ -167,10 +173,11 @@ font: 10pt/12pt 'Open Sans', sans-serif;
 #icon{ max-width:200px;}
 
 #flexbox{
-  display: flex; flex-flow: row wrap;  
+  display: flex; 
+  flex-flow: row wrap;  
   justify-content: space-around;
-
 }
+
 
 #blog{max-width: 1000px;
 display: flex;
